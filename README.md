@@ -4,6 +4,12 @@ SmartStock is a machine learning-based sales forecasting and inventory planning 
 
 It uses the last six weeks of sales data to predict next week's demand, analyze recent sales trends, and recommend an order quantity based on predicted demand and current stock.
 
+## Application
+
+![SmartStock dashboard](images/smartstock-dashboard.png)
+
+![SmartStock sales chart](images/smartstock-chart.png)
+
 ## Features
 
 * Next-week sales prediction
@@ -20,16 +26,16 @@ SmartStock takes six weeks of historical sales data and a sales trend feature as
 
 ```text
 6 Weeks of Sales + Sales Trend
-              ↓
-     Machine Learning Model
-              ↓
-      Next Week Prediction
-              ↓
-     + Safety Stock (20%)
-              ↓
-      - Current Stock
-              ↓
-      Recommended Order
+             ↓
+      Machine Learning Model
+             ↓
+       Next Week Prediction
+             ↓
+      + Safety Stock (20%)
+             ↓
+        - Current Stock
+             ↓
+       Recommended Order
 ```
 
 The application uses a safety stock level equal to 20% of the predicted demand.
@@ -86,6 +92,10 @@ SmartStock/
 ├── data/
 │   └── Sales_Transactions_Dataset_Weekly.csv
 │
+├── images/
+│   ├── smartstock-dashboard.png
+│   └── smartstock-chart.png
+│
 ├── app.py
 ├── train_model.py
 ├── model_comparison.py
@@ -101,7 +111,7 @@ SmartStock/
 Clone the repository:
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/azradrnn/SmartStock.git
 cd SmartStock
 ```
 
